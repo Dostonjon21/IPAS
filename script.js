@@ -25,7 +25,7 @@ const createUser = async () => {
         });
 
         const data = await response.json();
-        users.push({ id: data.id, name, job }); // ✅ Ma'lumotni to'g'ri qo'shamiz
+        users.push({ id: data.id, name, job }); 
 
         message.textContent = `Foydalanuvchi qo'shildi!`;
         renderUsers();
@@ -52,7 +52,7 @@ const renderUsers = () => {
     document.querySelectorAll('.delete-btn').forEach(btn => {
         btn.addEventListener('click', (e) => {
             const index = e.target.dataset.index;
-            users.splice(index, 1); // Massivdan o'chiramiz
+            users.splice(index, 1); 
             renderUsers();
         });
     });
