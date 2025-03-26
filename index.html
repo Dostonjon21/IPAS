@@ -17,8 +17,9 @@
             <input type="number" id="userId" placeholder="ID (Tahrirlash uchun)">
             <input type="text" id="name" placeholder="Ismingizni kriitng">
             <input type="text" id="job" placeholder="Kasbingizni kriitng">
-            <button id="createUser">Yangi foydalanuvchi</button>
-            <button class="update-btn">Foydalanuvchini kriting</button>
+
+            <button onclick="createUser()" id="createUser">➕Yangi foydalanuvchi</button>
+            <button class="update-btn" onclick="updateUser()">✏️Foydalanuvchini yangilash</button>
             <p id="message" class="error"></p>
         </div>
     </div>

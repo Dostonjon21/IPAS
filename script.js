@@ -41,9 +41,6 @@ const createUser = async () => {
     console.log(user);
     userList(data.id,data.name,data.job)
         
-        
-        
-        
 
     } catch  {
         message.textContent = `Xatolik yuz berdi`;
@@ -82,7 +79,7 @@ const  userList =()=>{
         <p>Id: ${item.id}</p>
         <p>Name: ${item.name}</p>
         <p>Work: ${item.job}</p>
-        <button class='delete-btn'>🗑</button>
+        <button class='delete-btn'>D</button>
         </div>
         `
     })
