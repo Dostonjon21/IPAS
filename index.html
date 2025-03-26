@@ -4,8 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="container">
+        <div class="sidebar">
+            <h2>📜Qo'shilgan foydalanuvchilar</h2>
+            <div id="userList" class="user-list"></div>
+        </div>
+        <div class="main-content">
+            <h1>Foydalanuvchi Qo'shish / Tahrirlash</h1>
+            <input type="number" id="userId" placeholder="ID (Tahrirlash uchun)">
+            <input type="text" id="name" placeholder="Ismingizni kriitng">
+            <input type="text" id="job" placeholder="Kasbingizni kriitng">
+            <button id="createUser">Yangi foydalanuvchi</button>
+            <button class="update-btn">Foydalanuvchini kriting</button>
+            <p id="message" class="error"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
