@@ -43,7 +43,7 @@ const renderUsers = () => {
                 <p>Id: ${item.id}</p>
                 <p>Name: ${item.name}</p>
                 <p>Work: ${item.job}</p>
-                <button class='delete-btn' data-index="${index}">O'chirish</button>
+                <button class='delete-btn' data-index="${index}">D</button>
             </div>
         `;
     });
