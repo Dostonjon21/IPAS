@@ -19,7 +19,7 @@ const createUser = async () => {
         return
         
     }else{
-        
+
             message.textContent=`Ma'lumotla yuborilmoqda...` 
         setTimeout(() => {
             message.textContent=''
