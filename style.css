@@ -1,0 +1,123 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:'Arial', sans-serif;
+}
+body{
+    background: #f4f7fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+.container{
+    display: flex;
+    width: 850px;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+.sidebar{
+    width: 270px;
+    border-right: 2px solid #ddd;
+    padding: 15px;
+    background: #f9f9f9;
+    overflow-y: auto;
+}
+.sidebar h2{
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+.user-list{
+    max-height: 400px;
+    overflow-y: auto;
+}
+.user-card{
+    padding: 15px;
+    border-radius: 10px;
+    background: #fff;
+    margin-top: 15px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    text-align: center;
+}
+.user-card  p{
+    margin: 8px;
+    font-size: 16px;
+    color: #444;
+}
+.delete-btn{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 36px;
+    height: 36px;
+    background: #ff4d4f;
+    color: white;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 28px;
+    transition: background 0.3s;
+}
+.delete-btn:hover{
+    background: #e03e3e;
+}
+.main-content{
+    flex: 1;
+    padding-left: 30px;
+}
+.main-content h1{
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+input{
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+input:focus{
+    border-color: #4CAF50;
+}
+button{
+    width: 100%;
+    padding: 14px;
+    margin-top: 15px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+button:hover{
+    background: #4CAF50;
+}
+.update-btn{
+    background: #1976F3;
+}
+.update-btn:hover{
+    background: #1976D2;
+}
+.error{
+    color: red;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
